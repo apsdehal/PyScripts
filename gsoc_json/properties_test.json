@@ -1,0 +1,861 @@
+[
+  {
+    "id": "P6",
+    "type": "property",
+    "aliases": {
+      "en": [
+        {
+          "language": "en",
+          "value": "mayor"
+        },
+        {
+          "language": "en",
+          "value": "president"
+        },
+        {
+          "language": "en",
+          "value": "prime minister"
+        },
+        {
+          "language": "en",
+          "value": "premier"
+        },
+        {
+          "language": "en",
+          "value": "first minister"
+        },
+        {
+          "language": "en",
+          "value": "head of national government"
+        }
+      ],
+      "hr": [
+        {
+          "language": "hr",
+          "value": "gradonačelnik"
+        }
+      ],
+      "el": [
+        {
+          "language": "el",
+          "value": "κοινοτάρχης"
+        },
+        {
+          "language": "el",
+          "value": "δήμαρχος"
+        },
+        {
+          "language": "el",
+          "value": "πρόεδρος"
+        },
+        {
+          "language": "el",
+          "value": "ύπατος"
+        },
+        {
+          "language": "el",
+          "value": "πρωθυπουργός"
+        }
+      ],
+      "fr": [
+        {
+          "language": "fr",
+          "value": "maire"
+        },
+        {
+          "language": "fr",
+          "value": "bourgmestre"
+        },
+        {
+          "language": "fr",
+          "value": "président de commune"
+        },
+        {
+          "language": "fr",
+          "value": "syndic"
+        },
+        {
+          "language": "fr",
+          "value": "président du gouvernement"
+        },
+        {
+          "language": "fr",
+          "value": "président du Conseil"
+        },
+        {
+          "language": "fr",
+          "value": "Premier ministre"
+        },
+        {
+          "language": "fr",
+          "value": "président de la République"
+        }
+      ],
+      "pl": [
+        {
+          "language": "pl",
+          "value": "mer"
+        },
+        {
+          "language": "pl",
+          "value": "prezydent miasta"
+        },
+        {
+          "language": "pl",
+          "value": "szef władzy wykonawczej"
+        },
+        {
+          "language": "pl",
+          "value": "starosta"
+        },
+        {
+          "language": "pl",
+          "value": "wójt"
+        },
+        {
+          "language": "pl",
+          "value": "prefekt"
+        },
+        {
+          "language": "pl",
+          "value": "gubernator"
+        }
+      ],
+      "cs": [
+        {
+          "language": "cs",
+          "value": "starosta"
+        },
+        {
+          "language": "cs",
+          "value": "primátor"
+        },
+        {
+          "language": "cs",
+          "value": "guvernér"
+        },
+        {
+          "language": "cs",
+          "value": "premiér"
+        },
+        {
+          "language": "cs",
+          "value": "kancléř"
+        }
+      ],
+      "ilo": [
+        {
+          "language": "ilo",
+          "value": "mayor"
+        },
+        {
+          "language": "ilo",
+          "value": "alkalde"
+        }
+      ],
+      "ru": [
+        {
+          "language": "ru",
+          "value": "мэр"
+        },
+        {
+          "language": "ru",
+          "value": "глава муниципального образования"
+        },
+        {
+          "language": "ru",
+          "value": "глава коммуны"
+        },
+        {
+          "language": "ru",
+          "value": "глава общины"
+        },
+        {
+          "language": "ru",
+          "value": "бургомистр"
+        },
+        {
+          "language": "ru",
+          "value": "градоначальник"
+        },
+        {
+          "language": "ru",
+          "value": "глава администрации самоуправляемой территории"
+        },
+        {
+          "language": "ru",
+          "value": "премьер-министр"
+        },
+        {
+          "language": "ru",
+          "value": "губернатор"
+        },
+        {
+          "language": "ru",
+          "value": "префект"
+        },
+        {
+          "language": "ru",
+          "value": "президент территориальной единицы"
+        }
+      ],
+      "de": [
+        {
+          "language": "de",
+          "value": "Bürgermeister"
+        },
+        {
+          "language": "de",
+          "value": "Oberbürgermeister"
+        },
+        {
+          "language": "de",
+          "value": "Ratsvorsitzender"
+        },
+        {
+          "language": "de",
+          "value": "Ortsbürgermeister"
+        },
+        {
+          "language": "de",
+          "value": "Regierungschef"
+        }
+      ],
+      "uk": [
+        {
+          "language": "uk",
+          "value": "міський голова"
+        },
+        {
+          "language": "uk",
+          "value": "мер"
+        }
+      ],
+      "lv": [
+        {
+          "language": "lv",
+          "value": "mērs"
+        }
+      ],
+      "it": [
+        {
+          "language": "it",
+          "value": "sindaco"
+        },
+        {
+          "language": "it",
+          "value": "presidente"
+        }
+      ],
+      "ro": [
+        {
+          "language": "ro",
+          "value": "primar"
+        }
+      ],
+      "ja": [
+        {
+          "language": "ja",
+          "value": "知事"
+        },
+        {
+          "language": "ja",
+          "value": "市長"
+        },
+        {
+          "language": "ja",
+          "value": "町長"
+        },
+        {
+          "language": "ja",
+          "value": "村長"
+        },
+        {
+          "language": "ja",
+          "value": "首長"
+        }
+      ],
+      "es": [
+        {
+          "language": "es",
+          "value": "jefe del gobierno municipal"
+        },
+        {
+          "language": "es",
+          "value": "alcalde"
+        },
+        {
+          "language": "es",
+          "value": "jefe de gobierno local"
+        },
+        {
+          "language": "es",
+          "value": "jefe de gobierno municipal"
+        }
+      ],
+      "nl": [
+        {
+          "language": "nl",
+          "value": "burgemeester"
+        },
+        {
+          "language": "nl",
+          "value": "regeringsleider"
+        },
+        {
+          "language": "nl",
+          "value": "eerste minister"
+        },
+        {
+          "language": "nl",
+          "value": "gouverneur"
+        },
+        {
+          "language": "nl",
+          "value": "minister-president"
+        }
+      ],
+      "be": [
+        {
+          "language": "be",
+          "value": "глава адміністрацыі"
+        },
+        {
+          "language": "be",
+          "value": "глава муніцыпальнага ўтварэння"
+        }
+      ],
+      "ca": [
+        {
+          "language": "ca",
+          "value": "batlle"
+        }
+      ],
+      "yi": [
+        {
+          "language": "yi",
+          "value": "בירגערמייסטער"
+        },
+        {
+          "language": "yi",
+          "value": "גובערנאטאר"
+        },
+        {
+          "language": "yi",
+          "value": "פרעזידענט"
+        }
+      ],
+      "te": [
+        {
+          "language": "te",
+          "value": "ముఖ్యమంత్రి"
+        },
+        {
+          "language": "te",
+          "value": "ప్రధాన మంత్రి"
+        },
+        {
+          "language": "te",
+          "value": "మేయర్"
+        }
+      ],
+      "hu": [
+        {
+          "language": "hu",
+          "value": "kormányfő"
+        },
+        {
+          "language": "hu",
+          "value": "polgármester"
+        },
+        {
+          "language": "hu",
+          "value": "főpolgármester"
+        }
+      ],
+      "vi": [
+        {
+          "language": "vi",
+          "value": "thị trưởng"
+        },
+        {
+          "language": "vi",
+          "value": "thống đốc"
+        },
+        {
+          "language": "vi",
+          "value": "thủ tướng"
+        },
+        {
+          "language": "vi",
+          "value": "tổng thống"
+        },
+        {
+          "language": "vi",
+          "value": "chủ tịch"
+        }
+      ]
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "head of the executive power of a town, city, municipality, state, country, or other governmental body"
+      },
+      "hr": {
+        "language": "hr",
+        "value": "glavni upravitelj grada, općine ili županije"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "personne publique chargée du pouvoir exécutif (quel que soit le niveau, y compris national)"
+      },
+      "de": {
+        "language": "de",
+        "value": "Leiter einer öffentlichen Einrichtung der Exekutive (ungeachtet der Ebene, einschließlich der nationalen)"
+      },
+      "es": {
+        "language": "es",
+        "value": "máxima autoridad administrativa y legislativa de un pueblo, ciudad, municipio, país u otros organismos gubernamentales"
+      },
+      "it": {
+        "language": "it",
+        "value": "capo amministrativo di uno Stato, città, comune o municipalità"
+      },
+      "he": {
+        "language": "he",
+        "value": "ראש עיר, ראש מועצה, מדינה"
+      },
+      "el": {
+        "language": "el",
+        "value": "κύριος διοικητής μιας χώρας, πόλης, κωμόπολης, δήμου"
+      },
+      "cs": {
+        "language": "cs",
+        "value": "hlava exekutivy"
+      },
+      "ilo": {
+        "language": "ilo",
+        "value": "kangrunaan nga administrador ti maysa nga ili, siudad wenno munisipalidad"
+      },
+      "pt-br": {
+        "language": "pt-br",
+        "value": "chefe administrativo de uma cidade ou município"
+      },
+      "lv": {
+        "language": "lv",
+        "value": "pilsētas, pašvaldības, štata, valsts vai cita pārvaldes orgāna izpildvaras vadītājs"
+      },
+      "ca": {
+        "language": "ca",
+        "value": "cap del govern municipal, estatal, nacional o d'altres organismes de govern"
+      },
+      "fi": {
+        "language": "fi",
+        "value": "Hallinnon johtaja"
+      },
+      "ro": {
+        "language": "ro",
+        "value": "șeful administrației orașului, comunei"
+      },
+      "nl": {
+        "language": "nl",
+        "value": "hoofd van de uitvoerende macht van het bestuursniveau (burgemeester, gouverneur, regeringsleider, ...)"
+      },
+      "id": {
+        "language": "id",
+        "value": "kepala administrasi kota atau kabupaten"
+      },
+      "min": {
+        "language": "min",
+        "value": "kapalo administrasi kota atau kabupaten"
+      },
+      "uz": {
+        "language": "uz",
+        "value": "shahar, shaharcha yoki boshqa turdagi aholi punktining boshligʻi"
+      },
+      "fa": {
+        "language": "fa",
+        "value": "رئیس شهر یا شهرستان"
+      },
+      "en-gb": {
+        "language": "en-gb",
+        "value": "chief administrator of a town, city, municipality, country or other governmental body"
+      },
+      "sv": {
+        "language": "sv",
+        "value": "premiärminister, borgmästare, kommunstyrelsens ordförande och liknande"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "地方行政府（市、町、その他の自治体）の首長"
+      },
+      "nb": {
+        "language": "nb",
+        "value": "øverste sjef for den offentlige forvaltningen av en by, et fylke, et land eller en annen administrativ inndelingsenhet"
+      },
+      "en-ca": {
+        "language": "en-ca",
+        "value": "chief administrator of a town, city, or municipality"
+      },
+      "nds-nl": {
+        "language": "nds-nl",
+        "value": "Bi'jveurbeeld in ne gemeente den börgemeister"
+      },
+      "nn": {
+        "language": "nn",
+        "value": "ordførar, borgarmeister osv."
+      },
+      "da": {
+        "language": "da",
+        "value": "leder af forvaltning i lande og administrative inddelinger af lande (regeringschef, rådsformand, borgmester etc.)"
+      },
+      "ru": {
+        "language": "ru",
+        "value": "высшее административное лицо, глава исполнительного органа города, муниципалитета, страны или другой правительственной структуры"
+      },
+      "gu": {
+        "language": "gu",
+        "value": "ગામ, શહેર, નગરપાલિકા, દેશ અથવા અન્ય સરકારી એકમના વડા"
+      },
+      "zh-hant": {
+        "language": "zh-hant",
+        "value": "村鎮、城市、直轄區、國家或其他行政區域的最高管治者"
+      },
+      "zh-hans": {
+        "language": "zh-hans",
+        "value": "村镇、城市、直辖区、国家或其他行政区域的最高管治者"
+      },
+      "zh": {
+        "language": "zh",
+        "value": "村镇、城市、直辖区、国家或其他行政区域的最高管治者"
+      },
+      "ko": {
+        "language": "ko",
+        "value": "행정부, 지방자치단체 등 정부 기관의 수장"
+      },
+      "hu": {
+        "language": "hu",
+        "value": "államban, városban, önkormányzatban a végrehajtó hatalom vezetője"
+      },
+      "ta": {
+        "language": "ta",
+        "value": "நகர், மாநகர், மாநிலம், நாடு அல்லது அரசாங்க அமைப்பு ஆகியவற்றின் நிருவாக அதிகாரம் கொண்ட தலைவர்"
+      },
+      "te": {
+        "language": "te",
+        "value": "పట్టణ, నగర, రాష్ట్ర, దేశ లేదా ఇతర ప్రభుత్వ సంస్థ యొక్క ముఖ్య పరిపాలనాధికారి"
+      },
+      "zh-cn": {
+        "language": "zh-cn",
+        "value": "村镇、城市、直辖区、国家或其他行政区域的最高管治者"
+      },
+      "zh-hk": {
+        "language": "zh-hk",
+        "value": "村鎮、城市、直轄區、國家或其他行政區域的最高管治者"
+      },
+      "br": {
+        "language": "br",
+        "value": "den zo ar veli gantañ en ur gêr, bro pe Stad"
+      }
+    },
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "head of government"
+      },
+      "it": {
+        "language": "it",
+        "value": "capo del governo"
+      },
+      "de": {
+        "language": "de",
+        "value": "Leiter eines Regierungs- oder Verwaltungsorgans"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "chef de l'exécutif"
+      },
+      "fi": {
+        "language": "fi",
+        "value": "hallituksen johtaja"
+      },
+      "cs": {
+        "language": "cs",
+        "value": "představitel"
+      },
+      "zh-hans": {
+        "language": "zh-hans",
+        "value": "政府首长"
+      },
+      "hu": {
+        "language": "hu",
+        "value": "kormányzati vagy közigazgatási vezető"
+      },
+      "hr": {
+        "language": "hr",
+        "value": "čelnik samouprave"
+      },
+      "es": {
+        "language": "es",
+        "value": "jefe de gobierno"
+      },
+      "ru": {
+        "language": "ru",
+        "value": "глава правительства"
+      },
+      "nl": {
+        "language": "nl",
+        "value": "bestuurshoofd"
+      },
+      "el": {
+        "language": "el",
+        "value": "επικεφαλής ανώτατου διοικητικού οργάνου"
+      },
+      "lmo": {
+        "language": "lmo",
+        "value": "sindéch"
+      },
+      "pl": {
+        "language": "pl",
+        "value": "zarządzający"
+      },
+      "sr": {
+        "language": "sr",
+        "value": "председник владе"
+      },
+      "ca": {
+        "language": "ca",
+        "value": "cap de govern"
+      },
+      "zh": {
+        "language": "zh",
+        "value": "政府首长"
+      },
+      "ilo": {
+        "language": "ilo",
+        "value": "daulo ti lokal a gobierno"
+      },
+      "be": {
+        "language": "be",
+        "value": "глава ўрада"
+      },
+      "fa": {
+        "language": "fa",
+        "value": "شهردار"
+      },
+      "nb": {
+        "language": "nb",
+        "value": "leder av regjering eller forvaltningsorgan"
+      },
+      "pt-br": {
+        "language": "pt-br",
+        "value": "prefeito"
+      },
+      "ko": {
+        "language": "ko",
+        "value": "정부 수반"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "地方行政府の長"
+      },
+      "uk": {
+        "language": "uk",
+        "value": "голова муніципальної адміністрації"
+      },
+      "lv": {
+        "language": "lv",
+        "value": "valdības vadītājs"
+      },
+      "eo": {
+        "language": "eo",
+        "value": "estro"
+      },
+      "th": {
+        "language": "th",
+        "value": "หัวหน้าการปกครองส่วนท้องถิ่น"
+      },
+      "be-tarask": {
+        "language": "be-tarask",
+        "value": "кіраўнік адміністрацыі"
+      },
+      "nds": {
+        "language": "nds",
+        "value": "Baas vun de Verwaltung"
+      },
+      "ro": {
+        "language": "ro",
+        "value": "șeful administrației publice locale"
+      },
+      "vi": {
+        "language": "vi",
+        "value": "chủ tịch chính phủ"
+      },
+      "id": {
+        "language": "id",
+        "value": "kepala pemerintahan lokal"
+      },
+      "min": {
+        "language": "min",
+        "value": "kapalo pamarintahan satampek"
+      },
+      "ka": {
+        "language": "ka",
+        "value": "ადმინისტრაციის მეთაური"
+      },
+      "uz": {
+        "language": "uz",
+        "value": "mahalliy hokimiyat boshligʻi"
+      },
+      "gl": {
+        "language": "gl",
+        "value": "xefe de goberno local"
+      },
+      "pt": {
+        "language": "pt",
+        "value": "chefe do executivo"
+      },
+      "zh-tw": {
+        "language": "zh-tw",
+        "value": "政府首長"
+      },
+      "zh-hant": {
+        "language": "zh-hant",
+        "value": "政府首長"
+      },
+      "en-gb": {
+        "language": "en-gb",
+        "value": "head of government"
+      },
+      "af": {
+        "language": "af",
+        "value": "hoof van plaaslike regering"
+      },
+      "da": {
+        "language": "da",
+        "value": "leder af forvaltning"
+      },
+      "sv": {
+        "language": "sv",
+        "value": "ledare"
+      },
+      "sco": {
+        "language": "sco",
+        "value": "heid o local govrenment"
+      },
+      "en-ca": {
+        "language": "en-ca",
+        "value": "head of local government"
+      },
+      "sk": {
+        "language": "sk",
+        "value": "predstaviteľ"
+      },
+      "nds-nl": {
+        "language": "nds-nl",
+        "value": "heufd van lokaal bestuur"
+      },
+      "nn": {
+        "language": "nn",
+        "value": "lokal leiar"
+      },
+      "bn": {
+        "language": "bn",
+        "value": "স্থানীয় সরকারের প্রধান"
+      },
+      "oc": {
+        "language": "oc",
+        "value": "cap de l'executiu"
+      },
+      "mk": {
+        "language": "mk",
+        "value": "началник на локалната управа"
+      },
+      "tl": {
+        "language": "tl",
+        "value": "punong ng gobyerno"
+      },
+      "gu": {
+        "language": "gu",
+        "value": "સરકારના વડા"
+      },
+      "sl": {
+        "language": "sl",
+        "value": "predsednik Vlade"
+      },
+      "ms": {
+        "language": "ms",
+        "value": "ketua kerajaan"
+      },
+      "ckb": {
+        "language": "ckb",
+        "value": "سەرۆک"
+      },
+      "yi": {
+        "language": "yi",
+        "value": "רעגירונג הויפט"
+      },
+      "sr-ec": {
+        "language": "sr-ec",
+        "value": "председник владе"
+      },
+      "zh-cn": {
+        "language": "zh-cn",
+        "value": "政府首长"
+      },
+      "is": {
+        "language": "is",
+        "value": "stjórnarleiðtogi"
+      },
+      "mzn": {
+        "language": "mzn",
+        "value": "شهردار"
+      },
+      "rm": {
+        "language": "rm",
+        "value": "schef da la regenza"
+      },
+      "et": {
+        "language": "et",
+        "value": "valitsusjuht"
+      },
+      "ta": {
+        "language": "ta",
+        "value": "அரசின் தலைவர்"
+      },
+      "la": {
+        "language": "la",
+        "value": "praefectus"
+      },
+      "tt": {
+        "language": "tt",
+        "value": "хөкүмәт башлыгы"
+      },
+      "te": {
+        "language": "te",
+        "value": "ప్రభుత్వ ముఖ్యాధికారి"
+      },
+      "zh-hk": {
+        "language": "zh-hk",
+        "value": "政府首長"
+      },
+      "or": {
+        "language": "or",
+        "value": "ସରକାର ମୁଖ୍ୟ"
+      },
+      "he": {
+        "language": "he",
+        "value": "ראש הרשות המושלת"
+      },
+      "hi": {
+        "language": "hi",
+        "value": "शासनाध्यक्ष"
+      },
+      "br": {
+        "language": "br",
+        "value": "penn an aotrouniezh"
+      }
+    },
+    "datatype": "wikibase-item"
+  }
+] 
