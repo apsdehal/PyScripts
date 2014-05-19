@@ -23,25 +23,19 @@ def setFwdBwd(lines, i):
 		next = ''	
 	current = lines[i]
 	return (prev, next, current)
-
-for i in range(0, len(lines)):
+i = 0
+while i < len(lines):
+	print i
 	(prev, next, current) = setFwdBwd(lines, i)
-	try:
-		split = current.split(':',2)
-		first_part = split[0]
-		second_part = split[1]
-	except:
-		split = current
-		first_part = current	
 	if current.find('"id"') != -1 and current.find('P') != -1:
 		data += prev
 		data += current
 		data += next
-	i = i + 2
+		i = i + 2
 	(prev, next, current) = setFwdBwd(lines, i)				
 	if current.find('"aliases"') != -1:
 		data += current
-		i = i+1
+		i = i + 1
 		(prev, next, current) = setFwdBwd(lines, i)		
 		while 1:
 			if current.find('"en": [') != -1:
@@ -49,27 +43,33 @@ for i in range(0, len(lines)):
 					data += current				
 					i = i+1
 					(prev, next, current) = setFwdBwd(lines, i)
-			data += current		
+				data += current	
 			i = i + 1		
 			(prev, next, current) = setFwdBwd(lines, i)		
 			if current.find('"descriptions": {') != -1:
+				data += prev
 				data += current
-				break;
-	print data			
-	while 1:			
-		i = i + 1		
-		(prev, next, current) = setFwdBwd(lines, i)		
-		if current.find('"en": {') != -1:
-			while current.find('}') != -1:
-				data +=current
-				i = i + 1		
-				(prev, next, current) = setFwdBwd(lines, i)
-		if current.find('"labels": {') != -1:
-			data += current
-		if current.find('"datatype"') != -1:
-			data += current
-			data += next
-			break;
-data += ']'		
+				break
+	if current.find('"descriptions": {') != -1:			
+		while 1:			
+			i = i + 1		
+			(prev, next, current) = setFwdBwd(lines, i)
+			if current.find('"en": {') != -1:
+				while current.find('}') == -1:
+					data += current
+					i = i + 1		
+					(prev, next, current) = setFwdBwd(lines, i)
+				data += current	
+			if current.find('"labels": {') != -1:
+				data += prev
+				data += current
+			if current.find('"datatype"') != -1:
+				data += current
+				data += next
+				break
+	if current[0] == ']':
+		data += current
+		break
+	i = i + 1			
 print data		
 	
