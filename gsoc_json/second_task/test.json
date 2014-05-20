@@ -1,0 +1,38 @@
+[
+ {
+    "id": "P1309",
+    "type": "property",
+    "type": "property",
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "ID in Bibliotheca Alexandrina"
+      },
+    },
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "EGAXA identifier"
+      },
+    },
+    "datatype": "string"
+  },
+  {
+    "id": "P1310",
+    "type": "property",
+    "type": "property",
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "entity that disputes a given statement"
+      }
+    },
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "statement disputed by"
+      }
+    },
+    "datatype": "wikibase-item"
+  }
+]

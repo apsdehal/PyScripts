@@ -1,0 +1,21 @@
+"items": [
+	{
+		"type": ["predicate"],
+		"rdftype": ["http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"],
+		"description": "ID in Bibliotheca Alexandrina",
+		"label": "EGAXA identifier",
+		"domain": [],
+		"range": [],
+		"value": "http://wikidata.org/wiki/Property:P1309"
+	},
+	{
+		"type": ["predicate"],
+		"rdftype": ["http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"],
+		"description": "entity that disputes a given statement",
+		"label": "statement disputed by",
+		"domain": [],
+		"range": [],
+		"value": "http://wikidata.org/wiki/Property:P1310"
+	},
+
+]
