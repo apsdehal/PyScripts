@@ -857,5 +857,494 @@
       }
     },
     "datatype": "wikibase-item"
-  }
+  },
+  {
+    "id": "P7",
+    "type": "property",
+    "aliases": {
+      "vi": [
+        {
+          "language": "vi",
+          "value": "anh"
+        },
+        {
+          "language": "vi",
+          "value": "em trai"
+        }
+      ],
+      "en": [
+        {
+          "language": "en",
+          "value": "has brother"
+        }
+      ],
+      "bn": [
+        {
+          "language": "bn",
+          "value": "ভ্রাতা"
+        },
+        {
+          "language": "bn",
+          "value": "দাদা"
+        }
+      ],
+      "ja": [
+        {
+          "language": "ja",
+          "value": "兄"
+        },
+        {
+          "language": "ja",
+          "value": "弟"
+        }
+      ],
+      "ko": [
+        {
+          "language": "ko",
+          "value": "형"
+        }
+      ],
+      "hu": [
+        {
+          "language": "hu",
+          "value": "báty"
+        },
+        {
+          "language": "hu",
+          "value": "öcs"
+        }
+      ],
+      "te": [
+        {
+          "language": "te",
+          "value": "అన్న"
+        },
+        {
+          "language": "te",
+          "value": "తమ్ముడు"
+        }
+      ]
+    },
+    "descriptions": {
+      "it": {
+        "language": "it",
+        "value": "grado di parentela"
+      },
+      "en": {
+        "language": "en",
+        "value": "subject has the object as their brother"
+      },
+      "ru": {
+        "language": "ru",
+        "value": "брат персоны"
+      },
+      "hr": {
+        "language": "hr",
+        "value": "subjektu je objekt brat"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "le sujet a pour frère l'objet"
+      },
+      "de": {
+        "language": "de",
+        "value": "Verwandter männlichen Geschlechts, der dieselben Eltern hat"
+      },
+      "he": {
+        "language": "he",
+        "value": "אחיו (ממין זכר בלבד) של הנושא"
+      },
+      "fi": {
+        "language": "fi",
+        "value": "kohde on aiheen veli"
+      },
+      "ilo": {
+        "language": "ilo",
+        "value": "ti suheto ket kabsatda a lalaki ti banag"
+      },
+      "es": {
+        "language": "es",
+        "value": "el sujeto tuvo como hermano al objeto"
+      },
+      "pt-br": {
+        "language": "pt-br",
+        "value": "o sujeito tem o objeto como irmão"
+      },
+      "lv": {
+        "language": "lv",
+        "value": "objekts ir subjekta brālis"
+      },
+      "sr": {
+        "language": "sr",
+        "value": "субјекат има објекат за брата"
+      },
+      "hi": {
+        "language": "hi",
+        "value": "विषय का भाई"
+      },
+      "id": {
+        "language": "id",
+        "value": "saudara-saudara dari subyek"
+      },
+      "min": {
+        "language": "min",
+        "value": "saudaro nan basangkutan"
+      },
+      "fa": {
+        "language": "fa",
+        "value": "برادر شخص مورد نظر"
+      },
+      "en-ca": {
+        "language": "en-ca",
+        "value": "the subject has the object as their brother"
+      },
+      "el": {
+        "language": "el",
+        "value": "Το υποκείμενο έχει έναν τουλάχιστον κοινό γονέα με το  (αρσενικό) αντικείμενο"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "その項目は主題に対し兄または弟"
+      },
+      "ca": {
+        "language": "ca",
+        "value": "la persona n'és germà"
+      },
+      "gu": {
+        "language": "gu",
+        "value": "વિષયનો ભાઈ"
+      },
+      "da": {
+        "language": "da",
+        "value": "subjektet har objektet som sin bror"
+      },
+      "ko": {
+        "language": "ko",
+        "value": "항목의 형제"
+      },
+      "si": {
+        "language": "si",
+        "value": "සහෝදරයා"
+      },
+      "en-gb": {
+        "language": "en-gb",
+        "value": "subject has the object as their brother"
+      },
+      "br": {
+        "language": "br",
+        "value": "ar sujed zo an objekt e vreur"
+      }
+    },
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "brother"
+      },
+      "it": {
+        "language": "it",
+        "value": "fratello"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "frère"
+      },
+      "fi": {
+        "language": "fi",
+        "value": "veli"
+      },
+      "de": {
+        "language": "de",
+        "value": "Bruder"
+      },
+      "cs": {
+        "language": "cs",
+        "value": "bratr"
+      },
+      "is": {
+        "language": "is",
+        "value": "bróðir"
+      },
+      "he": {
+        "language": "he",
+        "value": "אח"
+      },
+      "ru": {
+        "language": "ru",
+        "value": "брат"
+      },
+      "zh-hans": {
+        "language": "zh-hans",
+        "value": "兄弟"
+      },
+      "zh": {
+        "language": "zh",
+        "value": "兄弟"
+      },
+      "zh-hant": {
+        "language": "zh-hant",
+        "value": "兄弟"
+      },
+      "hu": {
+        "language": "hu",
+        "value": "fivér"
+      },
+      "hr": {
+        "language": "hr",
+        "value": "brat"
+      },
+      "es": {
+        "language": "es",
+        "value": "hermano"
+      },
+      "nl": {
+        "language": "nl",
+        "value": "broer"
+      },
+      "lmo": {
+        "language": "lmo",
+        "value": "fradèl"
+      },
+      "pl": {
+        "language": "pl",
+        "value": "brat"
+      },
+      "ca": {
+        "language": "ca",
+        "value": "germà"
+      },
+      "nb": {
+        "language": "nb",
+        "value": "bror"
+      },
+      "ilo": {
+        "language": "ilo",
+        "value": "kabsat a lalaki"
+      },
+      "be": {
+        "language": "be",
+        "value": "брат"
+      },
+      "nn": {
+        "language": "nn",
+        "value": "bror"
+      },
+      "pt-br": {
+        "language": "pt-br",
+        "value": "irmão"
+      },
+      "pt": {
+        "language": "pt",
+        "value": "irmão"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "兄弟"
+      },
+      "uk": {
+        "language": "uk",
+        "value": "брат"
+      },
+      "uz": {
+        "language": "uz",
+        "value": "akasi/ukasi"
+      },
+      "lv": {
+        "language": "lv",
+        "value": "brālis"
+      },
+      "fa": {
+        "language": "fa",
+        "value": "برادر"
+      },
+      "eo": {
+        "language": "eo",
+        "value": "frato"
+      },
+      "ko": {
+        "language": "ko",
+        "value": "형제"
+      },
+      "nds": {
+        "language": "nds",
+        "value": "Broder"
+      },
+      "ro": {
+        "language": "ro",
+        "value": "frate"
+      },
+      "sr": {
+        "language": "sr",
+        "value": "брат"
+      },
+      "vi": {
+        "language": "vi",
+        "value": "anh/em trai"
+      },
+      "ar": {
+        "language": "ar",
+        "value": "الأخ"
+      },
+      "gl": {
+        "language": "gl",
+        "value": "irmán"
+      },
+      "hi": {
+        "language": "hi",
+        "value": "भाई"
+      },
+      "be-tarask": {
+        "language": "be-tarask",
+        "value": "брат"
+      },
+      "sl": {
+        "language": "sl",
+        "value": "brat"
+      },
+      "el": {
+        "language": "el",
+        "value": "αδελφός"
+      },
+      "ta": {
+        "language": "ta",
+        "value": "சகோதரர்"
+      },
+      "af": {
+        "language": "af",
+        "value": "broer"
+      },
+      "zh-tw": {
+        "language": "zh-tw",
+        "value": "兄弟"
+      },
+      "da": {
+        "language": "da",
+        "value": "bror"
+      },
+      "id": {
+        "language": "id",
+        "value": "saudara laki-laki"
+      },
+      "min": {
+        "language": "min",
+        "value": "saudaro"
+      },
+      "ka": {
+        "language": "ka",
+        "value": "ძმა"
+      },
+      "mr": {
+        "language": "mr",
+        "value": "भाऊ"
+      },
+      "sv": {
+        "language": "sv",
+        "value": "bror"
+      },
+      "ckb": {
+        "language": "ckb",
+        "value": "برا"
+      },
+      "en-ca": {
+        "language": "en-ca",
+        "value": "brother"
+      },
+      "mzn": {
+        "language": "mzn",
+        "value": "برار"
+      },
+      "nds-nl": {
+        "language": "nds-nl",
+        "value": "breur"
+      },
+      "br": {
+        "language": "br",
+        "value": "breur"
+      },
+      "en-gb": {
+        "language": "en-gb",
+        "value": "brother"
+      },
+      "bn": {
+        "language": "bn",
+        "value": "ভাই"
+      },
+      "oc": {
+        "language": "oc",
+        "value": "fraire"
+      },
+      "mk": {
+        "language": "mk",
+        "value": "брат"
+      },
+      "yi": {
+        "language": "yi",
+        "value": "ברודער"
+      },
+      "lb": {
+        "language": "lb",
+        "value": "Brudder"
+      },
+      "rm": {
+        "language": "rm",
+        "value": "frar"
+      },
+      "jbo": {
+        "language": "jbo",
+        "value": "bruna"
+      },
+      "zh-cn": {
+        "language": "zh-cn",
+        "value": "兄弟"
+      },
+      "ms": {
+        "language": "ms",
+        "value": "saudara"
+      },
+      "bs": {
+        "language": "bs",
+        "value": "brat"
+      },
+      "tl": {
+        "language": "tl",
+        "value": "kapatid na lalaki"
+      },
+      "sr-ec": {
+        "language": "sr-ec",
+        "value": "брат"
+      },
+      "gu": {
+        "language": "gu",
+        "value": "ભાઈ"
+      },
+      "sk": {
+        "language": "sk",
+        "value": "brat"
+      },
+      "hy": {
+        "language": "hy",
+        "value": "եղբայր"
+      },
+      "sco": {
+        "language": "sco",
+        "value": "brither"
+      },
+      "zh-hk": {
+        "language": "zh-hk",
+        "value": "兄弟"
+      },
+      "te": {
+        "language": "te",
+        "value": "సోదరుడు"
+      },
+      "or": {
+        "language": "or",
+        "value": "ଭାଇ"
+      },
+      "si": {
+        "language": "si",
+        "value": "මල්ලී"
+      }
+    },
+    "datatype": "wikibase-item"
+  },
 ] 

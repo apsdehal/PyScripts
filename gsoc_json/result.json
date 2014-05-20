@@ -1,0 +1,72 @@
+[
+  {
+    "id": "P6",
+    "type": "property",
+    "aliases": {
+      "en": [
+        {
+          "language": "en",
+          "value": "mayor"
+        },
+        {
+          "language": "en",
+          "value": "president"
+        },
+        {
+          "language": "en",
+          "value": "prime minister"
+        },
+        {
+          "language": "en",
+          "value": "premier"
+        },
+        {
+          "language": "en",
+          "value": "first minister"
+        },
+        {
+          "language": "en",
+          "value": "head of national government"
+        }
+      ],
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "head of the executive power of a town, city, municipality, state, country, or other governmental body"
+      },
+    },
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "head of government"
+      },
+    },
+    "datatype": "wikibase-item"
+  },
+  {
+    "id": "P7",
+    "type": "property",
+    "aliases": {
+      "en": [
+        {
+          "language": "en",
+          "value": "has brother"
+        }
+      ],
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "subject has the object as their brother"
+      },
+    },
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "brother"
+      },
+    },
+    "datatype": "wikibase-item"
+  },
+] 

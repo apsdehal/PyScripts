@@ -23,9 +23,9 @@ def setFwdBwd(lines, i):
 		next = ''	
 	current = lines[i]
 	return (prev, next, current)
+
 i = 0
 while i < len(lines):
-	print i
 	(prev, next, current) = setFwdBwd(lines, i)
 	if current.find('"id"') != -1 and current.find('P') != -1:
 		data += prev
@@ -47,10 +47,10 @@ while i < len(lines):
 			i = i + 1		
 			(prev, next, current) = setFwdBwd(lines, i)		
 			if current.find('"descriptions": {') != -1:
-				data += prev
-				data += current
 				break
-	if current.find('"descriptions": {') != -1:			
+	if current.find('"descriptions": {') != -1:
+		data += prev
+		data += current			
 		while 1:			
 			i = i + 1		
 			(prev, next, current) = setFwdBwd(lines, i)
@@ -61,15 +61,30 @@ while i < len(lines):
 					(prev, next, current) = setFwdBwd(lines, i)
 				data += current	
 			if current.find('"labels": {') != -1:
-				data += prev
-				data += current
+				break
+	if current.find('"labels": {') != -1:
+		data += prev
+		data += current
+		while 1:			
+			i = i + 1		
+			(prev, next, current) = setFwdBwd(lines, i)
+			if current.find('"en": {') != -1:
+				while current.find('}') == -1:
+					data += current
+					i = i + 1		
+					(prev, next, current) = setFwdBwd(lines, i)
+				data += current			
 			if current.find('"datatype"') != -1:
+				data += prev
 				data += current
 				data += next
 				break
+			
 	if current[0] == ']':
 		data += current
 		break
 	i = i + 1			
-print data		
 	
+result.write(data)
+result.close()
+json.close()
