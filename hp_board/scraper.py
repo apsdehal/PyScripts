@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 
 import multiprocessing
 from joblib import Parallel, delayed
+import pickle
 
 try:
     from mechanize import Browser
@@ -33,14 +34,15 @@ def getResult(roll):
     try:
         br.open(WEBSITE)
         br.select_form(name=FORM_NAME)
-        br[ROLL_NO_HOLDER] = roll
+        br[ROLL_NO_HOLDER] = str(roll)
         br.form.action = WEBSITE
         response = br.submit()
 
         result = response.read()
+
     except:
         return getResult(roll)
-    print '[+] Got roll no. ' + roll
+    print '[+] Got roll no. ' + str(roll)
     return result
 
 
@@ -50,41 +52,57 @@ def writeToFile(result):
     write.write(result)
     write.close()
 
+CLASS_HOLDER = "ctl00_ContentPlaceHolder1%s"
 
 # Now add data to the data variable already created
-def addData(data, result):
-    result = result.split('\n')
-    try:
-        name = getBWAnchors(lines[321])[0]
-        rollno = getBWAnchors(lines[327])[0]
-        english = getBWAnchors(lines[396])[0]
-        math = getBWAnchors(lines[417])[0]
-        hindi = getBWAnchors(lines[432])[0]
-        sst = getBWAnchors(lines[447])[0]
-        science = getBWAnchors(lines[468])[0]
-        sanskrit = getBWAnchors(lines[477])[0]
-        art = getBWAnchors(lines[498])[0]
-        result = getBWAnchors(lines[408])[0]
-        data += '<tr>'
-        data += '<td>' + rollno + '</td>'
-        data += '<td>' + name + '</td>'
-        data += '<td>' + english + '</td>'
-        data += '<td>' + math + '</td>'
-        data += '<td>' + hindi + '</td>'
-        data += '<td>' + sst + '</td>'
-        data += '<td>' + science + '</td>'
-        data += '<td>' + sanskrit + '</td>'
-        data += '<td>' + art + '</td>'
-        data += '<td>' + result + '</td>'
-        data += '</tr>'
-    except:
-        pass
+def parseAndAdd(data, result):
+    soup = BeautifulSoup(result, "html5lib")
+    # try:
+    result = {}
+    result_div = soup.find(id=CLASS_HOLDER % "_pnlresult")
+    result_tbody = result_div.find("table").findAll("tbody")[1]
+    trs = result_tbody.findAll("tr")
+    name = result_div.find(id=CLASS_HOLDER % "_lblStudentName").getText()
+    result["name"] = name.encode("ascii", "ignore")
+    rollno = result_div.find(id=CLASS_HOLDER % "_lblRollNo").getText()
+    result["rollno"] = rollno.encode("ascii", "ignore")
+
+    for i in range(0, 8):
+        subject = result_div.find(id=CLASS_HOLDER % "_lblSub" + str(i))
+        marks = result_div.find(id=CLASS_HOLDER % "_lblres" + str(i))
+
+        if subject != None and marks != None:
+            subject = subject.getText()
+            marks = marks.getText()
+            result[subject.strip().lower().encode("ascii", "ignore")] = marks.strip().lower().encode("ascii", "ignore")
+
+    result["result"] = result_div.find(id=CLASS_HOLDER % "_lblResult").getText().encode("ascii", "ignore")
+    print(result)
+    data = addResult(data, result)
+    # except:
+    #     pass
+    return data
+
+average = {}
+def addResult(data, result):
+    data += '<tr>'
+    for sub in ["rollno", "name", "english", "mathematics", "hindi", "social science", "science", "sanskrit", "art", "computer science", "result"]:
+        answer = result.get(sub, "")
+        data += '<td>' + answer + '</td>'
+        if sub != "rollno" and sub != "name" and sub != "result":
+            if sub not in average:
+                average[sub] = []
+            if len(answer) and answer != "c" and answer != "f":
+                average[sub].append(float(answer.replace("*", "")))
+
+    data += '</tr>'
     return data
 
 
 # Get initial data with table tags
 def getInitialData():
-    data = '<table>'
+    data = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>Results 2017</title><style> table {text-align: center;border-collapse: collapse;} th {font-weight: bold;}th, td {padding: 0px 5px;border: 1px solid #000;}</style></head><body>'
+    data += '<table>'
     data += '<tr>'
     data += '<th>Rollno</th>'
     data += '<th>Name</th>'
@@ -94,21 +112,38 @@ def getInitialData():
     data += '<th>SST</th>'
     data += '<th>Science</th>'
     data += '<th>Sanskrit</th>'
-    data += '<th>Art/Comp</th>'
+    data += '<th>Art</th>'
+    data += '<th>Computer Science</th>'
     data += '<th>Result</th>'
     data += '</tr>'
+    return data
+
+def getAverage(data):
+    data += "<tr><td>Average</td><td></td>"
+
+    for sub in ["english", "mathematics", "hindi", "social science", "science", "sanskrit", "art", "computer science"]:
+        data += "<td>" + str(round(sum(average[sub]) / len(average[sub]), 3)) + "</td>"
+
+    data += "</tr>"
+
     return data
 
 
 if __name__ == '__main__':
     data = getInitialData()
     num_cores = multiprocessing.cpu_count()
-    results = Parallel(n_jobs=num_cores)(delayed(getResult)(str(i)) for i in range(1714547001, 1714547076))
+    results = Parallel(n_jobs=num_cores)(delayed(getResult)(str(i)) for i in range(1714547001, 1714547077))
+    # Be safe just in case
+    pickle.dump(results, open("results", "wb"))
+    results = pickle.loads(open("results", "rb").read())
+    print '[+] Writing it now'
+    print(len(results))
     for result in results:
-        print '[+] Writing it now'
-        data = addData(data, result)
-    data += '</table>'
-    result = open('result.html', 'w+')
+        data = parseAndAdd(data, result)
+
+    data = getAverage(data)
+    data += '</table></body></html>'
+    result = open('result2.html', 'w+')
     result.write(data)
     result.close()
 
